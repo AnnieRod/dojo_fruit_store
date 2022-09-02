@@ -22,11 +22,26 @@
       <main role="main">
   
         <section class="jumbotron text-center">
-          <div class="container">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
-            <p>
+            <li class="container d-flex justify-content-around">
+              <ul>
+                <img src="{{ url_for('static', filename='img/apple.png') }}" height="200px" width="200px">
+                <p class="font-weight-bold">Apples</p>
+              </ul>
+              <ul>
+                <img src="{{ url_for('static', filename='img/blackberry.png') }}" height="200px" width="200px">
+                <p class="font-weight-bold">Blackberries</p>
+              </ul>
+              <ul>
+                <img src="{{ url_for('static', filename='img/raspberry.png') }}" height="200px" width="200px">
+                <p class="font-weight-bold">Raspberries</p>
+              </ul>
+              <ul>
+                <img src="{{ url_for('static', filename='img/strawberry.png') }}" height="200px" width="200px">
+                <p class="font-weight-bold">Strawberries</p>
+              </ul>
+            </li>
+              <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>
           </div>
